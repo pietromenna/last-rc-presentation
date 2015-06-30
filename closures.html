@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Quirks taugth by Tom Ballinger! - Closures</title>
+</head>
+<body>
+<h1>Closures</h1>
+<script type="text/javascript">
+    var arr = [];
+    for (var i=0;i<3;i++){
+        var func = function(){
+            console.log(i);
+        }
+        arr.push(func);
+    }
+    arr[0]();
+</script>
+</body>
+</html>

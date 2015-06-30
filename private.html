@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Quirks taugth by Tom Ballinger! - Private stuff</title>
+</head>
+<body>
+<h1>Private Stuff?</h1>
+<script type="text/javascript">
+    var Person = function(name, age) {
+    var age = age;
+    var name = name;
+
+    this.getName = function(){
+        return age;
+    }
+
+    this.getAge = function(){
+        return name;
+    }
+}
+
+var pietro = new Person('Pietro', '32');
+console.log(pietro.getName());
+console.log(pietro.getAge());
+console.log(pietro.name);
+console.log(pietro.age);
+</script>
+</body>
+</html>
