@@ -4,7 +4,7 @@
 
 What does the code below return? Why?
 
-```
+```javascript
  var arr = [];
     for (var i=0;i<3;i++){
         var func = function(){
@@ -19,7 +19,7 @@ Test it yourself [here][1]
 
 ## Strange behavior with this! ##
 
-```
+```javascript
 var Person = function(age){
         this.age = age;
     }
@@ -32,7 +32,7 @@ Hint: try running `console.log(age);`
 
 ## Private members? ##
 
-```
+```javascript
 var Person = function(name, age) {
 var age = age;
 var name = name;
