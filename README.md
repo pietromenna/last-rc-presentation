@@ -21,10 +21,10 @@ Test it yourself [here][1]
 
 ```javascript
 var Person = function(age){
-        this.age = age;
-    }
-    tom = Person(25);
-    console.log(tom.age);
+    this.age = age;
+}
+tom = Person(25);
+console.log(tom.age);
 ```
 Test it yourself [here][2]
 
@@ -34,16 +34,16 @@ Hint: try running `console.log(age);`
 
 ```javascript
 var Person = function(name, age) {
-var age = age;
-var name = name;
+    var age = age;
+    var name = name;
 
-this.getName = function(){
-    return age;
-}
+    this.getName = function(){
+        return age;
+    }
 
-this.getAge = function(){
-    return name;
-}
+    this.getAge = function(){
+        return name;
+    }
 }
 
 var pietro = new Person('Pietro', '32');
